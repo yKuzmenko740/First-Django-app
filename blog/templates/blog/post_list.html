@@ -15,18 +15,14 @@
     </div>
 
     <div class="posts">
-        <div class="first_post">
-            <h2><a href="/">My first post</a></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus tortor sed tortor posuere efficitur.
-                Integer accumsan malesuada nibh, eu.</p>
-            <p class="publish">published: 10.8.20, 13:17</p>
-        </div>
-
-        <div class="second_post">
-            <h2><a href="/">My second post</a></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus tortor sed tortor posuere efficitur.
-                Integer accumsan malesuada nibh, eu.</p>
-            <p class="publish">published: 10.8.20, 14:20</p>
+        {% for post in posts %}
+            <div>
+                <h1><a href="/">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+                <p>{{ post.rate }}</p>
+                <p>published: {{ post.published_date }}</p>
+            </div>
+        {% endfor %}
         </div>
     </div>
 </body>
