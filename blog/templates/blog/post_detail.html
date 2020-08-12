@@ -2,6 +2,9 @@
 
 {% block content %}
     <div class="post">
+        {% if user.is_authenticated %}
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        {% endif %}
         <h1 class="post_h1"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
         <p class="post_p">{{ post.text|linebreaksbr }}</p>
         <p class="rate">Rate:<span>{{ post.rate }}</span></p>

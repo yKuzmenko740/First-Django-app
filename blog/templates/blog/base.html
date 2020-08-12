@@ -10,8 +10,11 @@
     </head>
     <body>
         <div class="welcome">
+            {% if user.is_authenticated %}
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            {% endif %}
             <div class="h1_welcome">
-                <h1>Hi everyone!</h1>
+                <h1>Django blog!</h1>
             </div>
             <div class="p_welcome">
                 <p>My name is <a href="/" class="name"><strong>Yuri</strong></a> and this is my first
