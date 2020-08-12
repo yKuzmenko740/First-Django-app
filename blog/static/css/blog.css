@@ -1,0 +1,83 @@
+/* WELCOME*/
+div.welcome{
+    color: black;
+    text-decoration: solid;
+    font-family: "Lobster";
+    background-color:#279289;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+    width: 100%;
+}
+div.h1_welcome h1{
+    font-size: 50px;
+}
+div.p_welcome{
+    font-size: 1.4em;
+}
+div.p_welcome strong{
+    color: black;
+}
+div.p_welcome a{
+    text-decoration: none;
+    color: black;
+}
+.external_link:hover{
+    color: white;
+}
+.name strong:hover{
+    color: white;
+}
+
+/*Main body*/
+body div.posts {
+    padding-left: 15px;
+    padding-right: 30px;
+}
+.post_h1{
+    text-decoration: none;
+    font-family: "Lobster";
+    font-size: 40px;
+    text-align: center;
+
+}
+.post_h1 a{
+    color:#279289;
+    text-decoration: none;
+}
+div.post h1:hover{
+    color:black;
+    text-decoration: underline;
+}
+
+.post_p{
+    border: 6px solid lightgrey;
+    border-radius: 100px;
+    background-color: lightgrey;
+    color:black;
+    text-decoration: bold;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.post_p::first-letter{
+    text-transform:capitalize;
+}
+div.post .rate{
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+div.post .rate span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #279289;
+}
+.post_date{
+    border-bottom: 7px solid #279289;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.post_date span{
+    font-weight: normal;
+}
